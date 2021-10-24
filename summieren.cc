@@ -17,10 +17,14 @@ int main() {
     { 
       if (i < 2) {
         fin >> str;
-        int strinteger = stoi(str);
-        sum = strinteger + sum;
-        std:: cout << str << " ";
-        i = i + 1;     
+          if (str=="") {
+             return 0;
+          } else {
+             int strinteger = stoi(str);
+             sum = strinteger + sum;
+             std:: cout << str << " ";
+             i = i + 1; 
+          }    
       } else {
         fout << sum << std::endl; 
         std:: cout <<""<< std::endl;

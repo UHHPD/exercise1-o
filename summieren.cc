@@ -23,7 +23,7 @@ int main() {
         i = i + 1;     
       } else {
         fout << sum << std::endl; 
-        std:: cout << n << std::endl;
+        std:: cout <<""<< std::endl;
         sum = 0;
         i = 0;
         n = n + 1; 

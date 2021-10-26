@@ -2,7 +2,7 @@
 #include <fstream>
 
 int main() {
- std::ifstream fin( "daten.txt" );
+ std::ifstream fin( "daten.txt" ); //I opened file daten.txt
  std::ofstream fout( "datensumme.txt" );
  int i;
  int n;
@@ -22,7 +22,7 @@ int main() {
           } else {
              int strinteger = stoi(str);
              sum = strinteger + sum;
-             std:: cout << str << " ";
+             std:: cout << strinteger << " ";
              i = i + 1; 
           }    
       } else {

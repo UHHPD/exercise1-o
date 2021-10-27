@@ -13,6 +13,8 @@ int n;
 n=0;
 i=0;
 std::ifstream fin( "datensumme.txt" ); 
+std::ofstream fout1( "mittelwerteteory.txt" );
+std::ofstream fout2( "varianzenteory.txt" );
  while ( !fin.eof() )
   { 
     fin >> sum;
@@ -28,6 +30,7 @@ double sredn = sumsum / i;
 std:: cout << " Summ =  "<< sumsum << std::endl;
 std:: cout << " Number of elements. =  "<< i << std::endl;
 std:: cout << " Srednya =  "<< sredn << std::endl;
+fout1 << sredn << std::endl;
 fin.close();
 
 std::ifstream dog( "datensumme.txt" ); 
@@ -45,6 +48,7 @@ double itog = (sumsrednyakv) / n;
 std:: cout << " sumsrednyakvadratichnoe  "<< sumsrednyakv << std::endl;
 std:: cout << " Number of elements =  "<< n << std::endl;
 std:: cout << " itog =  "<< itog << std::endl;
+fout2 << itog << std::endl;
 double koren = sqrt (itog);
 std:: cout << " sigma =  "<< koren << std::endl;
 dog.close();

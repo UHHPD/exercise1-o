@@ -27,8 +27,8 @@ int main() {
           }    
       } else {
         fout << sum << std::endl; 
-        std:: cout <<""<< std::endl;
-        std:: cout << sum << " "<<std:: endl;
+        //std:: cout <<""<< std::endl;
+        //std:: cout << sum << " "<<std:: endl;
         sum = 0;
         i = 0;
         n = n + 1; 

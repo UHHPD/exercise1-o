@@ -7,6 +7,7 @@ int sum;
 double sumsum;
 int sum1;
 double sumsrednyakv;
+double srednyakv;
 double variance;
 int i;
 int n;
@@ -18,7 +19,7 @@ std::ofstream fout2( "varianzenteory.txt" );
  while ( !fin.eof() )
   { 
     fin >> sum;
-    sumsum = sum + sumsum;
+    sumsum = sum + sumsum ;
     i = i + 1; 
     //std:: cout << sum << " "<< i << " "<< sumsum << std::endl;
 
@@ -26,7 +27,7 @@ std::ofstream fout2( "varianzenteory.txt" );
   }
 
 
-double sredn = sumsum / i; 
+double sredn = (sumsum - 6) / (i-1); 
 //std:: cout << " Summ =  "<< sumsum << std::endl;
 //std:: cout << " Number of elements. =  "<< i << std::endl;
 std:: cout << sredn << std::endl;
@@ -37,14 +38,14 @@ std::ifstream dog( "datensumme.txt" );
  while ( !dog.eof() )
   { 
     dog >> sum1;
-    double srednyakv = (sum1 - sredn)*(sum1 - sredn);
+    srednyakv = (sum1 - sredn)*(sum1 - sredn);
     sumsrednyakv = sumsrednyakv + srednyakv;
     n = n + 1; 
     //std:: cout << sum1 << " "<< n << " "<< srednyakv <<" "<< sumsrednyakv << std::endl;
 
    
   }
-double itog = (sumsrednyakv) / n;
+double itog = (sumsrednyakv-srednyakv) / (n-1);
 //std:: cout << " sumsrednyakvadratichnoe  "<< sumsrednyakv << std::endl;
 //std:: cout << " Number of elements =  "<< n << std::endl;
 std:: cout << itog << std::endl;

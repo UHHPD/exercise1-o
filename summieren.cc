@@ -22,12 +22,12 @@ int main() {
           } else {
              int strinteger = stoi(str);
              sum = strinteger + sum;
-             std:: cout << strinteger << " ";
+             //std:: cout << strinteger << " ";
              i = i + 1; 
           }    
       } else {
-        fout << sum << std::endl; 
-        std:: cout <<""<< std::endl;
+        fout << sum << std::endl;
+        //std:: cout <<""<< std::endl;
         //std:: cout << sum << " "<<std:: endl;
         sum = 0;
         i = 0;

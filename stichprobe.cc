@@ -47,7 +47,7 @@ std::ifstream dog( "datensumme.txt" );
 double itog = (sumsrednyakv) / n;
 //std:: cout << " sumsrednyakvadratichnoe  "<< sumsrednyakv << std::endl;
 //std:: cout << " Number of elements =  "<< n << std::endl;
-std:: cout itog << std::endl;
+std:: cout << itog << std::endl;
 fout2 << itog << std::endl;
 double koren = sqrt (itog);
 std:: cout << koren << std::endl;

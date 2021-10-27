@@ -27,7 +27,7 @@ std::ofstream fout2( "varianzenteory.txt" );
   }
 
 
-double sredn = (sumsum - 6) / (i-1); 
+double sredn = (sumsum - sum) / (i-1); 
 //std:: cout << " Summ =  "<< sumsum << std::endl;
 //std:: cout << " Number of elements. =  "<< i << std::endl;
 std:: cout << sredn << std::endl;

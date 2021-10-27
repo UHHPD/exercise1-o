@@ -119,7 +119,7 @@ fin3 >> vteory;
  double korenitog2 = sqrt(itog2);
 
  f = 0;
- std:: cout << "1.79615" << std::endl;
+ //std:: cout << itog2 << std::endl;
 
 
 

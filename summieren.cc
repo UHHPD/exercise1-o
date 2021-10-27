@@ -2,7 +2,7 @@
 #include <fstream>
 
 int main() {
- std::ifstream fin( "daten.txt" ); //I opened file daten.txt
+ std::ifstream fin( "daten.txt" ); 
  std::ofstream fout( "datensumme.txt" );
  int i;
  int n;
@@ -28,6 +28,7 @@ int main() {
       } else {
         fout << sum << std::endl; 
         std:: cout <<""<< std::endl;
+        std:: cout << sum << " "<<std:: endl;
         sum = 0;
         i = 0;
         n = n + 1; 

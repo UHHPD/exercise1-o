@@ -27,9 +27,9 @@ std::ofstream fout2( "varianzenteory.txt" );
 
 
 double sredn = sumsum / i; 
-std:: cout << " Summ =  "<< sumsum << std::endl;
-std:: cout << " Number of elements. =  "<< i << std::endl;
-std:: cout << " Srednya =  "<< sredn << std::endl;
+//std:: cout << " Summ =  "<< sumsum << std::endl;
+//std:: cout << " Number of elements. =  "<< i << std::endl;
+std:: cout << sredn << std::endl;
 fout1 << sredn << std::endl;
 fin.close();
 
@@ -40,17 +40,17 @@ std::ifstream dog( "datensumme.txt" );
     double srednyakv = (sum1 - sredn)*(sum1 - sredn);
     sumsrednyakv = sumsrednyakv + srednyakv;
     n = n + 1; 
-    std:: cout << sum1 << " "<< n << " "<< srednyakv <<" "<< sumsrednyakv << std::endl;
+    //std:: cout << sum1 << " "<< n << " "<< srednyakv <<" "<< sumsrednyakv << std::endl;
 
    
   }
 double itog = (sumsrednyakv) / n;
-std:: cout << " sumsrednyakvadratichnoe  "<< sumsrednyakv << std::endl;
-std:: cout << " Number of elements =  "<< n << std::endl;
-std:: cout << " itog =  "<< itog << std::endl;
+//std:: cout << " sumsrednyakvadratichnoe  "<< sumsrednyakv << std::endl;
+//std:: cout << " Number of elements =  "<< n << std::endl;
+std:: cout itog << std::endl;
 fout2 << itog << std::endl;
 double koren = sqrt (itog);
-std:: cout << " sigma =  "<< koren << std::endl;
+std:: cout << koren << std::endl;
 dog.close();
 return 0;  
 }

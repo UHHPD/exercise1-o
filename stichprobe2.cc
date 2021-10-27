@@ -102,7 +102,7 @@ fin2 >> mteory;
    sumbessm = bessm + sumbessm;
    r = r + 1;
  }
- double itog1 = sumbessm / r;
+ double itog1 = sumbessm / (r-1);
  double korenitog1 = sqrt(itog1);
 
  r = 0;
@@ -115,7 +115,7 @@ fin3 >> vteory;
    sumbessv = bessv + sumbessv;
    f = f + 1;
  }
- double itog2 = sumbessv / f;
+ double itog2 = sumbessv / (f-1);
  double korenitog2 = sqrt(itog2);
 
  f = 0;

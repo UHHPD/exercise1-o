@@ -20,7 +20,7 @@ std::ofstream fout2( "varianzenteory.txt" );
     fin >> sum;
     sumsum = sum + sumsum;
     i = i + 1; 
-    std:: cout << sum << " "<< i << " "<< sumsum << std::endl;
+    //std:: cout << sum << " "<< i << " "<< sumsum << std::endl;
 
    
   }

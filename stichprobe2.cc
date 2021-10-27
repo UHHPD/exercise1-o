@@ -106,7 +106,7 @@ fin2 >> mteory;
  double korenitog1 = sqrt(itog1);
 
  r = 0;
-// std:: cout << " itog 1  =   " << itog1 << " "<< korenitog1<< std::endl;
+std:: cout << korenitog1<< std::endl;
 fin3 >> vteory;
  while ( !fin2.eof() ) {
    fin2 >> v;
@@ -119,7 +119,7 @@ fin3 >> vteory;
  double korenitog2 = sqrt(itog2);
 
  f = 0;
- //std:: cout << " itog 2  =   " << itog2 << " "<< korenitog2<< std::endl;
+ std:: cout << korenitog2 << std::endl;
 
 
 

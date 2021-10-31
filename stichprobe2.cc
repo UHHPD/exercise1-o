@@ -88,6 +88,7 @@ double bessv;
 double sumbessm;
 double sumbessv;
 int r;
+r=0;
 int f;
 
 std::ifstream fin1( "mittelwerte.txt" ); 
@@ -98,25 +99,24 @@ fin2 >> mteory;
  while ( !fin1.eof() ) {
    fin1 >> m;
    int mint = stoi(m);
-   bessm = (mint - mteory)*(mint-mteory);
-   sumbessm = bessm + sumbessm;
+   sumbessm = mint + sumbessm;
    r = r + 1;
  }
- double itog1 = sumbessm / (r-1);
- double korenitog1 = sqrt(itog1);
+ double itog1 = sumbessm  / (r-1);
+
+std:: cout << itog1<<"  "<< r-1 << std::endl;
 
  r = 0;
-std:: cout << korenitog1<< std::endl;
+
 fin3 >> vteory;
  while ( !fin2.eof() ) {
    fin2 >> v;
    int vint = stoi(v);
-   bessv = (vint - vteory)*(vint-vteory);
-   sumbessv = bessv + sumbessv;
+   sumbessv = vint + sumbessv;
    f = f + 1;
  }
- double itog2 = sumbessv / (f-1);
- double korenitog2 = sqrt(itog2);
+ double itog2 = sumbessv / (f);
+ std:: cout << itog2<< "  " << f << std::endl;
 
  f = 0;
  //std:: cout << itog2 << std::endl;

@@ -90,6 +90,7 @@ double sumbessv;
 int r;
 r=0;
 int f;
+int mint;
 
 std::ifstream fin1( "mittelwerte.txt" ); 
 std::ifstream fin2( "varianzen.txt" );
@@ -98,13 +99,13 @@ std::ifstream fin4( "varianzenteory.txt" );
 fin2 >> mteory;
  while ( !fin1.eof() ) {
    fin1 >> m;
-   int mint = stoi(m);
+   mint = stoi(m);
    sumbessm = mint + sumbessm;
    r = r + 1;
  }
- double itog1 = sumbessm  / (r-1);
+ double itog1 = (sumbessm - mint)  / (r-1);
 
-std:: cout << itog1<< std::endl;
+std:: cout << itog1 << std::endl;
 
  r = 0;
 

@@ -106,7 +106,7 @@ fin2 >> mteory;
  }
  double itog1 = (sumbessm - mint)  / (r);
 
-//std:: cout << itog1 << std::endl;
+std:: cout << itog1 << std::endl;
 
  r = 0;
 
@@ -119,7 +119,7 @@ fin3 >> vteory;
    //std:: cout <<f<<" "<< vint << "  "<< sumbessv << std::endl;
  }
  double itog2 = sumbessv / (f);
- //std:: cout << itog2 << std::endl;
+ std:: cout << itog2 << std::endl;
 
  f = 0;
  //std:: cout << itog2 << std::endl;

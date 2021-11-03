@@ -56,7 +56,7 @@ std::ofstream fout2( "varianzen.txt" );
            }    
   
     
-         double itog = (sumsrednyakv) / (h-1);
+         double itog = (sumsrednyakv) / (h);
          fout2 << itog << std::endl;
          double koren = sqrt (itog);
          //std:: cout << "________________________________" << std::endl;

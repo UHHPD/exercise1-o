@@ -101,9 +101,10 @@ fin2 >> mteory;
    fin1 >> m;
    mint = stoi(m);
    sumbessm = mint + sumbessm;
+   std:: cout << r <<" " << mint << "  "<< sumbessm << std::endl;
    r = r + 1;
  }
- double itog1 = (sumbessm - mint)  / (r-2);
+ double itog1 = (sumbessm - mint)  / (r);
 
 std:: cout << itog1 << std::endl;
 
@@ -115,8 +116,9 @@ fin3 >> vteory;
    int vint = stoi(v);
    sumbessv = vint + sumbessv;
    f = f + 1;
+   std:: cout <<f<<" "<< vint << "  "<< sumbessv << std::endl;
  }
- double itog2 = sumbessv / (f-1);
+ double itog2 = sumbessv / (f);
  std:: cout << itog2 << std::endl;
 
  f = 0;

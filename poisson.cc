@@ -12,14 +12,14 @@ double faktorial;
 double poisson(double mu, int l) {
   exponent = exp((-1)*mu);
   std:: cout << "_________" << std::endl;
-  std:: cout << "Номер числа " << l << std::endl;
+  std:: cout << "Number  " << l << std::endl;
   std:: cout << exponent << std::endl;
   stepen = pow(mu, l);
   std:: cout << stepen << std::endl;
   faktorial =  tgamma(l+1);
   std:: cout << faktorial << std::endl;
   poissonter = (exponent) * (stepen) / faktorial;
-  std:: cout << "Вероятность " << l << std::endl;
+  std:: cout << "Probability " << l << std::endl;
   std:: cout << poissonter << std::endl;
   return poissonter;
 }
@@ -40,7 +40,7 @@ int main () {
      }
    }
   for(unsigned int k = 0 ; k < zaehler.size() ; ++k) { 
-       fout1 <<  k << " " << zaehler[k] << " " << 11 * poisson (3.11538, k)  << std::endl;
+       fout1 <<  k << " " << zaehler[k] << " " << 234* poisson (3.11538, k)  << std::endl;
   }
   for(unsigned int k = 0 ; k < zaehler.size() ; ++k) { 
        fout <<  k << " " << zaehler[k] << std::endl;   

@@ -14,7 +14,7 @@ double faktorial;
 double mu1; 
 double poissonter;
 
-double prob(std::vector<int> daten, double mu, int j) {
+double prob(std::vector<int> daten, double mu, int j) { //function of likelihoodfunc
     exponent = exp((-1)*mu);
   //std:: cout << "_________" << std::endl;
   //std:: cout << "Number  " << daten[j] << std::endl;
@@ -36,17 +36,19 @@ double itog1;
 double itog3;
 itog3=1;
 double itog4;
+double itog5;
 std::vector<int> daten;
 std::ifstream fin( "datensumme.txt" );
-std::ofstream fout( "likelihood.txt" );
-std::ofstream fout1( "nll.txt" );
-std::ofstream fout2( "deltanll.txt" );
+std::ofstream fout( "likelihood.txt" ); //aufgabe b
+std::ofstream fout1( "nll.txt" );  //aufgabe c
+std::ofstream fout2( "deltanll.txt" );  //aufgabe d
+std::ofstream fout3( "abs.txt" );  // aufgabe d
   while ( !fin.eof() ) {
        fin >> zahl;
        daten.push_back(zahl); 
   }
  for(unsigned int k = 0 ; k < (daten.size()-1) ; ++k) { 
-      itog3 = itog3 * prob (daten, 3.11538, k);
+      itog3 = itog3 * prob (daten, 3.11538, k);   //likelihoodfunc
 
    
       //std::cout << k << "   mu  = "<< mu << << itog << std::endl;
@@ -63,14 +65,18 @@ mu1 = 0.1;
    fout <<  mu1 << " " << itog << std::endl;
    itog1 = log (itog); 
    itog2 = -2*itog1;
+
     
 
    itog4 = itog2 - (-2*(log (itog3)));
    fout1 <<  mu1 << " " << itog2 << std::endl;
    fout2 << mu1 << " " << itog4 << std::endl;
+   itog5 = (-2) * log (itog/itog3); 
+   fout3 << mu1 << " " << itog5 << std::endl;
    itog = 1;
+   itog5=1;
    mu1=mu1+0.1;
   } 
-  
- std::cout << itog3 << std::endl;
+ std::cout << " uncertainty on the sample mean =    " << 1.65365/sqrt(234) << std::endl;
+ //std::cout << itog3 << std::endl;
 }
